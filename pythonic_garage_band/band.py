@@ -15,7 +15,11 @@ class Guitarist:
         return f"Guitarist instance. Name = {self.name}"
 
 class Bassist:
-    pass
+    def __init__(self, name):
+        self.name = name
+
+    def __str__(self):
+        return f"My name is {self.name} and I play bass"
 
 class Drummer:
     def __init__(self, name):
