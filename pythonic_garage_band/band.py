@@ -1,14 +1,26 @@
-"""Class object representing a band of musicians"""
-class Band:
-    def __init__(self, name, members):
-        self.name = name
-
-    
-
 class Musician:
     def __init__(self):
         pass
-  
+
+"""Class object representing a band of musicians"""
+class Band(Musician):
+    def __init__(self, name, members):
+        self.name = name
+        self.members = []
+
+    def __str__(self):
+        pass
+
+    def __repr__(self):
+        pass
+
+    def play_solos():
+        pass
+
+    @classmethod
+    def to_list():
+        pass
+
 class Guitarist(Musician):
     def __init__(self, name):
         self.name = name
