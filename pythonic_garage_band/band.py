@@ -56,3 +56,6 @@ class Drummer(Musician):
     
     def __repr__(self):
         return f"Drummer instance. Name = {self.name}"
+    
+    def get_instrument(self):
+        return "drums"
