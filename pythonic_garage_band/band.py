@@ -1,3 +1,4 @@
+"""Class object representing a musician"""
 class Musician:
     def __init__(self):
         pass
@@ -21,6 +22,7 @@ class Band(Musician):
     def to_list():
         pass
 
+"""Class object representing a guitarist"""
 class Guitarist(Musician):
     def __init__(self, name):
         self.name = name
@@ -34,6 +36,7 @@ class Guitarist(Musician):
     def get_instrument(self):
         return "guitar"
 
+"""Class object representing a bassist"""
 class Bassist(Musician):
     def __init__(self, name):
         self.name = name
@@ -47,6 +50,7 @@ class Bassist(Musician):
     def get_instrument(self):
         return "bass"
 
+"""Class object representing a drummer"""
 class Drummer(Musician):
     def __init__(self, name):
         self.name = name

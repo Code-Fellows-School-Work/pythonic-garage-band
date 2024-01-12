@@ -165,7 +165,7 @@ def nirvana_data():
     }
 
 
-@pytest.fixture
+# @pytest.fixture
 def one_band():
     members = [
         Guitarist("Kurt Cobain"),
