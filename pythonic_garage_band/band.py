@@ -1,6 +1,9 @@
+"""Class object representing a band of musicians"""
 class Band:
     def __init__(self, name, members):
         self.name = name
+
+    
 
 class Musician:
     def __init__(self):
@@ -15,6 +18,9 @@ class Guitarist(Musician):
 
     def __repr__(self):
         return f"Guitarist instance. Name = {self.name}"
+    
+    def get_instrument(self):
+        return "guitar"
 
 class Bassist(Musician):
     def __init__(self, name):
