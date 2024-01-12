@@ -3,7 +3,7 @@
 ## Project: Pythonic Garage Band
 
 ### Author: Errol Vidad
-<!-- V.1.0.0 (Pr: https://github.com/Code-Fellows-School-Work/madlib-cli/pull/1) -->
+V.1.0.0 (Pr: https://github.com/Code-Fellows-School-Work/pythonic-garage-band/pull/1)
 
 ### Links and Resources
 - Back-end server url (when applicable): None
@@ -18,14 +18,14 @@ i.e.
 - DATABASE_URL - URL to the running Postgres instance/db: None
 
 ### How to initialize/run your application (where applicable)
-- python madlib.py
+- python band.py
 
 ### How to use your library (where applicable)
 ### Tests
 How do you run tests?
 
 - Install pytest to run tests
-<!-- - In madlib.py, comment out lines 2 thru 32 otherwise tests will fail -->
 
 Any tests of note?
-<!-- - All tests passed -->
+- Tests 1-10 pass
+- Did not complete code for tests 11-16
