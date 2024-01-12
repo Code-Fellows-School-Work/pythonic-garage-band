@@ -71,7 +71,7 @@ def test_guitarist():
     assert jimi.get_instrument() == "guitar"
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_bassist():
     flea = Bassist("Flea")
     assert flea.name == "Flea"
