@@ -85,7 +85,7 @@ def test_drummer():
     assert ginger.get_instrument() == "drums"
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_instruments(one_band):
     instruments = ["guitar", "bass", "drums"]
     for i, member in enumerate(one_band.members):
@@ -165,7 +165,7 @@ def nirvana_data():
     }
 
 
-# @pytest.fixture
+@pytest.fixture
 def one_band():
     members = [
         Guitarist("Kurt Cobain"),
