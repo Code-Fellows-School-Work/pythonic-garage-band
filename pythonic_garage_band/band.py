@@ -5,9 +5,12 @@ class Musician:
 
 """Class object representing a band of musicians"""
 class Band:
-    def __init__(self, name, members):
+    artists = []
+
+    def __init__(self, name, members=None):
         self.name = name
-        self.members = []
+        self.members = members
+        Band.artists.append(self)
 
     def __str__(self):
         pass
