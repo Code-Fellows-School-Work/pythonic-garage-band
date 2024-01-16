@@ -4,10 +4,13 @@ class Musician:
         pass
 
 """Class object representing a band of musicians"""
-class Band(Musician):
-    def __init__(self, name, members):
+class Band:
+    artists = []
+
+    def __init__(self, name, members=None):
         self.name = name
-        self.members = []
+        self.members = members
+        Band.artists.append(self)
 
     def __str__(self):
         pass
@@ -35,6 +38,9 @@ class Guitarist(Musician):
     
     def get_instrument(self):
         return "guitar"
+    
+    def play_solo(self):
+        return "face melting guitar solo"
 
 """Class object representing a bassist"""
 class Bassist(Musician):
@@ -49,6 +55,9 @@ class Bassist(Musician):
     
     def get_instrument(self):
         return "bass"
+    
+    def play_solo(self):
+        return "bom bom buh bom"
 
 """Class object representing a drummer"""
 class Drummer(Musician):
@@ -63,3 +72,6 @@ class Drummer(Musician):
     
     def get_instrument(self):
         return "drums"
+    
+    def play_solo(self):
+        return "rattle boom crash"
