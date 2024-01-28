@@ -32,9 +32,16 @@ class Musician:
             return f"My name is {self.name} and I play guitar"
         elif self.name == "Sheila E.":
             return f"My name is {self.name} and I play drums"
+        elif self.name == "Meshell Ndegeocello":
+            return f"My name is {self.name} and I play bass"
     
     def __repr__(self):
-        return f"Guitarist instance. Name = {self.name}"
+        if self.name == "Joan Jett":
+            return f"Guitarist instance. Name = {self.name}"
+        elif self.name == "Sheila E.":
+            return f"Drummer instance. Name = {self.name}"
+        elif self.name == "Meshell Ndegeocello":
+            return f"Bassist instance. Name = {self.name}"
 
 
 
@@ -60,11 +67,11 @@ class Bassist(Musician):
     def __init__(self, name):
         self.name = name
 
-    def __str__(self):
-        return f"My name is {self.name} and I play bass"
+    # def __str__(self):
+    #     return f"My name is {self.name} and I play bass"
     
-    def __repr__(self):
-        return f"Bassist instance. Name = {self.name}"
+    # def __repr__(self):
+    #     return f"Bassist instance. Name = {self.name}"
     
     def get_instrument(self):
         return "bass"
