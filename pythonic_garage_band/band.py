@@ -1,27 +1,21 @@
 """Class object representing a band of musicians"""
 class Band:
-    artists = []
+    instances = []
 
     def __init__(self, name, members=None):
         self.name = name
-        self.members = members
-        Band.artists.append(self)
+        self.members = members or []
+        Band.instances.append(self)
 
-    def __str__(self):
-        pass
-
-    def __repr__(self):
-        pass
-
+    # Couldn't figure out how to loop through the list so plugged Band class and test into ChatGPT for solution
     def play_solos(self):
-        solos = []
-        for member in self.members:
-            solos.append(member.play_solo())
-            return solos
+        return [member.play_solo() for member in self.members]
 
+    # method bound to the class and not the instance of the class
+    # so it affects the Band class
     @classmethod
-    def to_list():
-        pass
+    def to_list(cls):
+        return cls.instances
 
 class Musician:
     """
