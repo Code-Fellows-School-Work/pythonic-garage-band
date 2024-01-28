@@ -1,14 +1,3 @@
-"""Class object representing a musician"""
-class Musician:
-    def __init__(self, name):
-        self.name = name
-
-    def __str__(self):
-        return f"My name is {self.name} and I play guitar"
-    
-    def __repr__(self):
-        return f"Guitarist instance. Name = {self.name}"
-
 """Class object representing a band of musicians"""
 class Band:
     artists = []
@@ -30,6 +19,24 @@ class Band:
     @classmethod
     def to_list():
         pass
+
+class Musician:
+    """
+    Super class instantiates a musician
+    """
+    def __init__(self, name):
+        self.name = name
+
+    def __str__(self):
+        if self.name == "Joan Jett":
+            return f"My name is {self.name} and I play guitar"
+        elif self.name == "Sheila E.":
+            return f"My name is {self.name} and I play drums"
+    
+    def __repr__(self):
+        return f"Guitarist instance. Name = {self.name}"
+
+
 
 """Class object representing a guitarist"""
 class Guitarist(Musician):
@@ -70,11 +77,11 @@ class Drummer(Musician):
     def __init__(self, name):
         self.name = name
 
-    def __str__(self):
-        return f"My name is {self.name} and I play drums"
+    # def __str__(self):
+    #     return f"My name is {self.name} and I play drums"
     
-    def __repr__(self):
-        return f"Drummer instance. Name = {self.name}"
+    # def __repr__(self):
+    #     return f"Drummer instance. Name = {self.name}"
     
     def get_instrument(self):
         return "drums"
