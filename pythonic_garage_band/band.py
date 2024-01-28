@@ -1,5 +1,14 @@
-"""Class object representing a band of musicians"""
 class Band:
+    """
+    Class that instantiates a musical band
+
+    Param:
+        name: str
+        member: list of str or an empty string
+
+    Output:
+        Returns an instance of a band object
+    """
     instances = []
 
     def __init__(self, name, members=None):
@@ -19,7 +28,13 @@ class Band:
 
 class Musician:
     """
-    Super class instantiates a musician
+    Super class that instantiates a musician object
+
+    Param: 
+        name: str
+
+    Output:
+        Returns a string or representation of a musician instance
     """
     def __init__(self, name):
         self.name = name
@@ -41,8 +56,16 @@ class Musician:
             return f"Bassist instance. Name = {self.name}"
 
 
-"""Class object representing a guitarist"""
 class Guitarist(Musician):
+    """
+    Subclass that instantiates a guitarist object
+
+    Param: 
+        name: str
+
+    Output:
+        Returns an instance of a guitarist class
+    """
     def __init__(self, name):
         super().__init__(name)
     
@@ -52,8 +75,16 @@ class Guitarist(Musician):
     def play_solo(self):
         return "face melting guitar solo"
 
-"""Class object representing a bassist"""
 class Bassist(Musician):
+    """
+    Subclass that instantiates a bassist object
+
+    Param: 
+        name: str
+
+    Output:
+        Returns an instance of a bassist class
+    """
     def __init__(self, name):
         super().__init__(name)
     
@@ -63,8 +94,16 @@ class Bassist(Musician):
     def play_solo(self):
         return "bom bom buh bom"
 
-"""Class object representing a drummer"""
 class Drummer(Musician):
+    """
+    Subclass that instantiates a drummer object
+
+    Param: 
+        name: str
+
+    Output:
+        Returns an instance of a drummer class
+    """
     def __init__(self, name):
         super().__init__(name)
     
