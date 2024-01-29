@@ -4,6 +4,7 @@
 
 ### Author: Errol Vidad
 V.1.0.0 (Pr: https://github.com/Code-Fellows-School-Work/pythonic-garage-band/pull/1)
+V.1.1.0 (Pr: https://github.com/Code-Fellows-School-Work/pythonic-garage-band/pull/4)
 
 ### Links and Resources
 - Back-end server url (when applicable): None
@@ -18,6 +19,7 @@ i.e.
 - DATABASE_URL - URL to the running Postgres instance/db: None
 
 ### How to initialize/run your application (where applicable)
+
 - python band.py
 
 ### How to use your library (where applicable)
@@ -25,7 +27,7 @@ i.e.
 How do you run tests?
 
 - Install pytest to run tests
+- In the terminal, run pytest
 
 Any tests of note?
-- Tests 1-10 pass
-- Did not complete code for tests 11-16
+- Tests 1-16 pass
