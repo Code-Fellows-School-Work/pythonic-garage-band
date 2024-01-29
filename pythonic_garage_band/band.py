@@ -16,6 +16,13 @@ class Band:
         self.members = members or []
         Band.instances.append(self)
 
+    def __str__(self):
+        return f"Band name: {self.name}"
+    
+    def __repr__(self):
+        return f"Band name: {self.name}"
+        
+
     # Couldn't figure out how to loop through the list so plugged Band class and test into ChatGPT for solution
     def play_solos(self):
         return [member.play_solo() for member in self.members]
@@ -112,3 +119,4 @@ class Drummer(Musician):
     
     def play_solo(self):
         return "rattle boom crash"
+    
