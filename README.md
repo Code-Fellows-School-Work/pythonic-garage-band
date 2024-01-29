@@ -4,7 +4,7 @@
 
 ### Author: Errol Vidad
 V.1.0.0 (Pr: https://github.com/Code-Fellows-School-Work/pythonic-garage-band/pull/1)
-V.1.1.0 (Pr: https://github.com/Code-Fellows-School-Work/pythonic-garage-band/pull/2)
+V.1.1.0 (Pr: https://github.com/Code-Fellows-School-Work/pythonic-garage-band/pull/4)
 
 ### Links and Resources
 - Back-end server url (when applicable): None
